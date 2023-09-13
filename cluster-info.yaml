@@ -1,0 +1,18 @@
+# Creation of configmap 1
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fluent-bit-cluster-info
+  labels:
+    app: fluent-bit
+data:
+  ClusterName: aarons-cluster
+  RegionName: us-east-1
+  FluentBitHttpPort: "2020"
+  FluentBitReadFromHead: "OFF"
+  logs.region: us-east-1
+  cluster.name: aarons-cluster
+  http.server: "ON"
+  http.port: "2020"
+  read.head: "OFF"
+  read.tail: "ON"

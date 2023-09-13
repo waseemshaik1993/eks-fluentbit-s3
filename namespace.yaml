@@ -1,0 +1,7 @@
+#Namespace creation
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: logging
+  labels:
+    name: logging

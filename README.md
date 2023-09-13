@@ -1,6 +1,8 @@
 ### eks-fluentbit
 Sending EKS logs to CloudWatch and S3 with Fluent 
 
+### Written by Aaron Dhobi
+
 
 Need to get logging on your Kubernetes control plane? Need to monitor some of your application logs? Need your developers to debug some pod or container logs without giving admin access? This is for you…
 
