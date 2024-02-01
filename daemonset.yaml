@@ -29,7 +29,7 @@ spec:
                 name: fluent-bit-cluster-info
                 key: logs.region
           - name: CLUSTER_NAME
-            valueFrom: sanbox-eks-new
+            valueFrom: 
               configMapKeyRef:
                 name: fluent-bit-cluster-info
                 key: cluster.name
