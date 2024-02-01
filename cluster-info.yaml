@@ -6,12 +6,12 @@ metadata:
   labels:
     app: fluent-bit
 data:
-  ClusterName: aarons-cluster
-  RegionName: us-east-1
+  ClusterName: sanbox-eks-new
+  RegionName: ap-southeast-1
   FluentBitHttpPort: "2020"
   FluentBitReadFromHead: "OFF"
   logs.region: us-east-1
-  cluster.name: aarons-cluster
+  cluster.name: sanbox-eks-new
   http.server: "ON"
   http.port: "2020"
   read.head: "OFF"
