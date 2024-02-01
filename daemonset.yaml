@@ -24,34 +24,34 @@ spec:
         imagePullPolicy: Always
         env:
           - name: AWS_REGION
-            valueFrom: ap-southeast-1
+            valueFrom: 
               configMapKeyRef:
-                name: fluent-bit-config
+                name: fluent-bit-cluster-info
                 key: logs.region
           - name: CLUSTER_NAME
             valueFrom: sanbox-eks-new
               configMapKeyRef:
-                name: fluent-bit-config
+                name: fluent-bit-cluster-info
                 key: cluster.name
           - name: HTTP_SERVER
             valueFrom:
               configMapKeyRef:
-                name: fluent-bit-config
+                name: fluent-bit-cluster-info
                 key: http.server
           - name: HTTP_PORT
             valueFrom: 
               configMapKeyRef:
-                name: fluent-bit-config
+                name: fluent-bit-cluster-info
                 key: http.port
           - name: READ_FROM_HEAD
             valueFrom:
               configMapKeyRef:
-                name: fluent-bit-config
+                name: fluent-bit-cluster-info
                 key: read.head
           - name: READ_FROM_TAIL
             valueFrom:
               configMapKeyRef:
-                name: fluent-bit-config
+                name: fluent-bit-cluster-info
                 key: read.tail
           - name: HOST_NAME
             valueFrom:
