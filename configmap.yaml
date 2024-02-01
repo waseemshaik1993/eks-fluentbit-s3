@@ -90,7 +90,7 @@ data:
     [OUTPUT]
         Name                  s3
         Match                 application.*
-        bucket                aarons-logs-bucket
+        bucket                k8s-logs-mws
         region                ${AWS_REGION}
         total_file_size       250M
         compression           gzip
